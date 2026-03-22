@@ -2,3 +2,13 @@ data/raw/*
 data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+# Models
+models/*
+!models/.gitkeep
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Mac
+.DS_Store
