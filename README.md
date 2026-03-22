@@ -168,11 +168,6 @@ This is important for interpretability in financial systems.
 * Explainability is essential for trust in financial systems
 * Building an end-to-end pipeline improves understanding of real-world ML systems
 
----
-
-## 📌 Note
-
-This project focuses on system design and modeling approach rather than optimizing for production-level accuracy.
 
 ---
 
