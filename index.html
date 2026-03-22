@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fraud Detection ML Pipeline</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    padding: 60px 40px;
+}
+
+.container {
+    max-width: 1500px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.content {
+    display: flex;
+    gap: 40px;
+}
+
+.diagram {
+    flex: 65%;
+    background: #fff;
+    color: #000;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.info {
+    flex: 35%;
+    background: #0a0a0a;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #222;
+}
+
+.layer {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.arrow {
+    text-align: center;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.info-item {
+    margin-bottom: 20px;
+}
+
+.label {
+    font-weight: 600;
+}
+
+.value {
+    color: #aaa;
+    margin-top: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 15px;
+    color: #aaa;
+}
+
+li strong {
+    color: #fff;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h1>ML-Powered Fraud Detection Pipeline</h1>
+
+<div class="content">
+
+<!-- LEFT SIDE (FLOW DIAGRAM) -->
+<div class="diagram">
+
+<div class="layer">Transaction Input<br><small>User / API Request</small></div>
+
+<div class="arrow">↓</div>
+
+<div class="layer">Feature Engineering<br><small>Balance anomalies, ratios, behavior</small></div>
+
+<div class="arrow">↓</div>
+
+<div class="layer">XGBoost Model<br><small>Fraud Classification</small></div>
+
+<div class="arrow">↓</div>
+
+<div class="layer">SHAP Explainability<br><small>Feature contributions</small></div>
+
+<div class="arrow">↓</div>
+
+<div class="layer">API Response<br><small>Probability + Explanation</small></div>
+
+<div style="margin-top: 30px; padding: 15px; background:#f5f5f5; border-radius:6px; color:#000;">
+<strong>Flow:</strong> Transaction → Feature extraction → Model prediction → SHAP explanation → API response
+</div>
+
+</div>
+
+<!-- RIGHT SIDE (INFO) -->
+<div class="info">
+
+<h2>Project Information</h2>
+
+<div class="info-item">
+<div class="label">Technologies:</div>
+<div class="value">Python, XGBoost, FastAPI, SHAP, scikit-learn</div>
+</div>
+
+<div class="info-item">
+<div class="label">Model:</div>
+<div class="value">XGBoost Classifier</div>
+</div>
+
+<div class="info-item">
+<div class="label">Dataset:</div>
+<div class="value">PaySim Financial Transactions (~6M records)</div>
+</div>
+
+<div class="info-item">
+<div class="label">Source Code:</div>
+<div class="value">
+<a href="https://github.com/VummadiHarsha39/ML-Fraud-Detection-Pipeline" style="color:#667eea;">
+GitHub Repository
+</a>
+</div>
+</div>
+
+<ul style="margin-top: 30px;">
+
+<li><strong>Behavior-Based Detection:</strong> Model learns transaction patterns such as balance inconsistencies and abnormal financial flows rather than relying on simple thresholds.</li>
+
+<li><strong>Feature Engineering Focus:</strong> Key features like balance errors and transaction ratios capture fraud signals effectively.</li>
+
+<li><strong>Explainability:</strong> SHAP provides feature-level reasoning for each prediction, improving interpretability.</li>
+
+<li><strong>End-to-End Pipeline:</strong> Covers data processing, modeling, API inference, and explainability.</li>
+
+</ul>
+
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
